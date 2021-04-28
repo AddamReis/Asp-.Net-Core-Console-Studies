@@ -1,4 +1,5 @@
 ﻿using System;
+using EstudosDeCasos.Entities;
 
 namespace EstudosDeCasos
 {
@@ -6,7 +7,9 @@ namespace EstudosDeCasos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BusinessAccount conta = new BusinessAccount(3700, "Mário", 320.00, 600.00);
+
+            Console.WriteLine(conta.Saldo);
         }
     }
 }
